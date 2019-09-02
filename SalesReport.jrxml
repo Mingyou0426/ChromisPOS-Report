@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SalesReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f76206bb-916b-4871-bf12-35cd9d6be846">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="dateval" class="java.lang.String"/>
+	<field name="quantitysold" class="java.lang.String"/>
+	<field name="costvalue" class="java.lang.String"/>
+	<field name="salesvalue" class="java.lang.String"/>
+	<field name="profit" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="30" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="85" height="24" uuid="012424cf-712d-4e84-9906-776e1850b85a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="85" height="24" uuid="724d23ca-6ad1-4be5-bae1-77c07dd31ba0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Quantity Sold]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="85" height="24" uuid="1e85a3f6-ba9d-47a7-8f25-cf37f5b4448d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Cost Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="85" height="24" uuid="044a8958-4960-4fa3-9cd6-c594595c521a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sales Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="85" height="24" uuid="efba8111-e42a-4ffc-956a-6a21300378cf"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Profit]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="85" height="24" uuid="d844cada-1aa4-4208-9fc1-dcdf62a72235"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dateval}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="85" height="24" uuid="14399970-e399-41e0-b6f9-1218079fd56c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{quantitysold}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="85" height="24" uuid="b5b0fe03-9b8f-48c6-ba51-c218427028f6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{costvalue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="85" height="24" uuid="c3094477-bb5e-4d5c-a440-8d7c7f2a1d3e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{salesvalue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="85" height="24" uuid="9a33815c-192e-48f8-b57a-9642b70068af"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{profit}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="10" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="0" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="0" splitType="Stretch"/>
+	</summary>
+</jasperReport>
